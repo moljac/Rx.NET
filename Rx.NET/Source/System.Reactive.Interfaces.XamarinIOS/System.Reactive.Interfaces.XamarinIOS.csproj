@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7AA82B7B-67DA-421C-80FE-93627A369E5A}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>System.Reactive.Interfaces</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>System.Reactive.Interfaces.XamarinIOS</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\System.Reactive.Interfaces\AssemblyFileVersionAttribute.cs">
+      <Link>AssemblyFileVersionAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Reactive.Interfaces\DateTimeOffset.cs">
+      <Link>DateTimeOffset.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Reactive.Interfaces\GlobalSuppressions.cs">
+      <Link>GlobalSuppressions.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Reactive.Interfaces\IObservable.cs">
+      <Link>IObservable.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Reactive.Interfaces\IObserver.cs">
+      <Link>IObserver.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Reactive.Interfaces\NamespaceDocs.cs">
+      <Link>NamespaceDocs.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Reactive.Interfaces\Reactive\Concurrency\IScheduledItem.cs">
+      <Link>Reactive\Concurrency\IScheduledItem.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Reactive.Interfaces\Reactive\Concurrency\IScheduler.cs">
+      <Link>Reactive\Concurrency\IScheduler.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Reactive.Interfaces\Reactive\Concurrency\ISchedulerLongRunning.cs">
+      <Link>Reactive\Concurrency\ISchedulerLongRunning.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Reactive.Interfaces\Reactive\Concurrency\ISchedulerPeriodic.cs">
+      <Link>Reactive\Concurrency\ISchedulerPeriodic.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Reactive.Interfaces\Reactive\Concurrency\IStopwatch.cs">
+      <Link>Reactive\Concurrency\IStopwatch.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Reactive.Interfaces\Reactive\Concurrency\IStopwatchProvider.cs">
+      <Link>Reactive\Concurrency\IStopwatchProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Reactive.Interfaces\Reactive\Disposables\ICancelable.cs">
+      <Link>Reactive\Disposables\ICancelable.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Reactive.Interfaces\Reactive\IEventPattern.cs">
+      <Link>Reactive\IEventPattern.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Reactive.Interfaces\Reactive\IEventPatternSource.cs">
+      <Link>Reactive\IEventPatternSource.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Reactive.Interfaces\Reactive\IEventSource.cs">
+      <Link>Reactive\IEventSource.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Reactive.Interfaces\Reactive\IObserver.Result.cs">
+      <Link>Reactive\IObserver.Result.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Reactive.Interfaces\Reactive\Linq\IGroupedObservable.cs">
+      <Link>Reactive\Linq\IGroupedObservable.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Reactive.Interfaces\Reactive\Linq\IQbservable.cs">
+      <Link>Reactive\Linq\IQbservable.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Reactive.Interfaces\Reactive\Linq\IQbservableProvider.cs">
+      <Link>Reactive\Linq\IQbservableProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Reactive.Interfaces\Reactive\Subjects\IConnectableObservable.cs">
+      <Link>Reactive\Subjects\IConnectableObservable.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Reactive.Interfaces\Reactive\Subjects\ISubject.cs">
+      <Link>Reactive\Subjects\ISubject.cs</Link>
+    </Compile>
+    <Compile Include="..\System.Reactive.Interfaces\Reactive\Subjects\ISubject.Multi.cs">
+      <Link>Reactive\Subjects\ISubject.Multi.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
+</Project>
